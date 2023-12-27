@@ -127,6 +127,16 @@ h2 {
   color: rgb(184, 3, 3);
 }
 
+.formFecha {
+  text-align: center;
+  margin: 5px;
+}
+
+h5 {
+  font-size: medium;
+  color: rgb(184, 3, 3);
+}
+
 /* pantalla maximo 980px */
 @media screen and (max-width:980px) {
   .container {
