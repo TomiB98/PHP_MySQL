@@ -1,0 +1,2 @@
+<strong>• Usuario: </strong>Tomas - ejemplo@gmail.com<br/><b>• Comentario: </b><br/>Los comentarios se cargan correctamente<br/><b>- Fue realizado el dia 05-01-2024 a las 19:20 -</b>
+<strong>• Usuario: </strong>Manuel - ejemplo2@gmail.com<br/><b>• Comentario: </b><br/>Se carga el ultimo comentario al principio de la lista<br/><b>- Fue realizado el dia 05-01-2024 a las 19:20 -</b>
