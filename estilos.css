@@ -197,6 +197,13 @@ h5 {
   align-items: center;
 }
 
+.marcaAgua{
+  height: 400px;
+  width: 380px;
+  border-radius: 5px;
+  box-shadow: 5px 3px 3px 1px rgba(0, 0, 0, 0.2)
+}
+
 /* pantalla maximo 980px */
 @media screen and (max-width:980px) {
   .container {
