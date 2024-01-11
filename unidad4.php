@@ -26,6 +26,13 @@
 				<img class="marcaAgua" src="componentes/marca_de_agua.php">
 			</div>
 
+			<h3>• Imágenes dinámicas:</h3>
+			<div class="imgDinamic">
+				<img src="componentes/imagen_dinamica_jpeg.php">
+				<img src="componentes/imagen_dinamica_png.php">
+				<img src="componentes/imagen_dinamica_pngtxt.php">
+			</div>
+
 		</section>
 		<aside>
 
