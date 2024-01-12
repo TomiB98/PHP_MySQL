@@ -198,11 +198,30 @@ h5 {
   align-items: center;
 }
 
-.marcaAgua{
+.marcaAgua {
   height: 400px;
   width: 380px;
   border-radius: 5px;
   box-shadow: 5px 3px 3px 1px rgba(0, 0, 0, 0.2)
+}
+
+.thumbnail {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(1, 156, 161, 0.726);
+  animation: latido 1s infinite;
+}
+
+@keyframes latido {
+  0% {
+    box-shadow: 0 0 10px 0 rgba(1, 156, 161, 0.726);
+  }
+  50% {
+    box-shadow: 0 0 20px 10px rgba(1, 156, 161, 0.726);
+  }
+  100% {
+    box-shadow: 0 0 10px 0 rgb(1, 156, 161);
+  }
 }
 
 .imgDinamic {

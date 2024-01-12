@@ -1,5 +1,5 @@
 <?php
-$image = "../imagenes/unidad4.jpg";
+$image = "../imagenes/unidad_4.jpg";
 $marca_agua = "../imagenes/marca.png";
 
 $img = imagecreatefrompng($marca_agua);

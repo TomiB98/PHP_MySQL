@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
 </head>
 
 <body>
@@ -33,6 +34,12 @@
 				<img src="componentes/imagen_dinamica_pngtxt.php">
 			</div>
 
+			<h3>• Thumbnail:</h3>
+			<?php //include('componentes/thumbnail.php') ?>
+			<div class="submitComentario">
+				<a href="imagenes/River.jpg" data-lightbox="image-1" data-title="Imagen aumentada!"><img class="thumbnail" src="imagenes/thumb.jpg"></a>
+			</div>
+
 		</section>
 		<aside>
 
@@ -42,6 +49,8 @@
 		</footer>
 
 	</div>
+	<script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+	<script type="text/javascript" src="js/lightbox.js"></script>
 </body>
 
 </html>
