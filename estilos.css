@@ -184,7 +184,7 @@ h5 {
 
 .imputComentarioText {
   height: 80px;
-  width: 100%;
+  width: 99%;
   border-radius: 2px;
   border: 1px solid #bebdbd;
   outline: 0;
@@ -228,6 +228,32 @@ h5 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.fotoDBmini {
+  width: 90%;
+  height: 100px;
+  border: 1px solid #bebdbd;
+  margin-bottom: 1px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(1, 156, 161, 0.726);
+  animation: latido 1s infinite;
+}
+
+.fotoDB {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #777676;
+}
+
+.contFormImg {
+  border: 1px solid #777676;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #f06156;
 }
 
 /* pantalla maximo 980px */
