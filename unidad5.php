@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -30,16 +31,16 @@
 			<h3>• Captcha:</h3>
 
 			<?php
-			function contenido_captcha()
-			{
-				$pattern = "1234567890abcdefghijklmnopqrstuvwxyz#$%?ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-				$clave = "";
-				for ($i = 0; $i < 8; $i++) {
-					$clave .= $pattern[rand(0, 65)];
-				}
-				return $clave;
-			}
-			$_SESSION['captcha'] = contenido_captcha();
+			// function contenido_captcha()
+			// {
+			// 	$pattern = "1234567890abcdefghijklmnopqrstuvwxyz#$%?ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+			// 	$clave = "";
+			// 	for ($i = 0; $i < 8; $i++) {
+			// 		$clave .= $pattern[rand(0, 65)];
+			// 	}
+			// 	return $clave;
+			// }
+			// $_SESSION['captcha'] = contenido_captcha();
 			?>
 
 			<form class="formCaptcha" action="componentes/cargar.php" method="POST">
@@ -47,10 +48,17 @@
 				<input class="imputFormCaptcha" type="text" placeholder="Apellido" name="surname" required maxlength="50">
 				<input class="imputFormCaptcha" type="email" placeholder="Email" name="email" required maxlength="50">
 				<textarea class="imputCaptchaText" type="text" placeholder="Consulta" name="cons" required maxlength="255"></textarea>
-				<div class="submitCaptcha">
+				
+				<!-- <div class="submitCaptcha">
 					<img src="componentes/imagen_captcha.php">
 					<input class="imputCaptcha" type="text" placeholder="Captcha" name="code" required>
+				</div> -->
+
+				<div class="submitCaptcha">
+					<img src="componentes/imagen_captcha2.php">
+					<input class="imputCaptcha" type="text" placeholder="Captcha" name="code" required>
 				</div>
+
 				<div class="submitComentario">
 					<input class="submitUnidad1" type="submit" value="Enviar">
 				</div>
