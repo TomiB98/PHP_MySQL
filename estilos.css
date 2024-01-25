@@ -313,6 +313,14 @@ h5 {
   width: 40%;
 }
 
+.usuarios {
+  text-align: center;
+  width: 30%;
+  border: 1px solid #666;
+  border-radius: 3px;
+  background:  #f06056d8;
+}
+
 /* pantalla maximo 980px */
 @media screen and (max-width:980px) {
   .container {
