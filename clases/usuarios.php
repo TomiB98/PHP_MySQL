@@ -8,6 +8,8 @@ class Usuarios {
         $this->nombre = $nom;
         $this->apellido = $apll;
         $this->fecha_nacimiento = $nac;
+        //$fecha_nacimiento_obj = date_create_from_format('d/m/Y', $nac);
+        //$this->fecha_nacimiento = $fecha_nacimiento_obj->format('Y-m-d');
     }
 
     private function calcular_edad() {
@@ -18,9 +20,11 @@ class Usuarios {
     }
 
     public function imprime_carcteristicas() {
-        echo "<p>Nombre: ".$this->nombre."</p>";
-        echo "<p>Apellido: ".$this->apellido."</p>";
+        echo "<h3>Usuario</h3>";
+        echo "<p>Nombre/s: ".$this->nombre."</p>";
+        echo "<p>Apellido/s: ".$this->apellido."</p>";
         echo "<p>Edad: ".$this->calcular_edad()."</p>";
+        //echo "<p>Edad: ".$this->fecha_nacimiento."</p>";
     }
 }
 ?>

@@ -314,8 +314,9 @@ h5 {
 }
 
 .usuarios {
+  margin: auto;
   text-align: center;
-  width: 30%;
+  width: 80%;
   border: 1px solid #666;
   border-radius: 3px;
   background:  #f06056d8;
