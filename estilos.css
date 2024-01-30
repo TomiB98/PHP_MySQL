@@ -322,6 +322,21 @@ h5 {
   background:  #f06056d8;
 }
 
+.listaProdTitle {
+  background-color: #ccc;
+  border: 1px solid #f06056d8;
+  padding: 10px;
+  text-align: center;
+}
+
+.listaProd {
+  /* border-right: 1px solid #f06056d8;
+  border-bottom: 1px solid #f06056d8; */
+  border: 1px solid #f06056d8;
+  padding: 10px;
+  text-align: center;
+}
+
 /* pantalla maximo 980px */
 @media screen and (max-width:980px) {
   .container {

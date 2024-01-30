@@ -29,10 +29,10 @@
 
 			<table>
 				<tr>
-					<th>Codigo</th>
-					<th>Nombre</th>
-					<th>Descripción</th>
-					<th>Precio</th>
+					<th class="listaProdTitle">Codigo</th>
+					<th class="listaProdTitle">Nombre</th>
+					<th class="listaProdTitle">Descripción</th>
+					<th class="listaProdTitle">Precio</th>
 				</tr>
 
 				<?php
@@ -40,11 +40,11 @@
 				?>
 					<form action="componentes/introducir_compra.php" method="post">
 						<tr>
-							<td><input type="hidden" name="codigo" value="<?php echo $mostrar_productos[$i]['codigo']; ?>"><?php echo $mostrar_productos[$i]['codigo']; ?></td>
-							<td><input type="hidden" name="producto" value="<?php echo $mostrar_productos[$i]['producto']; ?>"><?php echo $mostrar_productos[$i]['producto']; ?></td>
-							<td><input type="hidden" name="descripcion" value="<?php echo $mostrar_productos[$i]['descripcion']; ?>"><?php echo $mostrar_productos[$i]['descripcion']; ?></td>
-							<td><input type="hidden" name="precio" value="<?php echo $mostrar_productos[$i]['precio']; ?>"><?php echo $mostrar_productos[$i]['precio']; ?>$</td>
-							<td><button type="submit" class="submitUnidad1">Add to 🛒</button></td>
+							<td class="listaProd"><input type="hidden" name="codigo" value="<?php echo $mostrar_productos[$i]['codigo']; ?>"><?php echo $mostrar_productos[$i]['codigo']; ?></td>
+							<td class="listaProd"><input type="hidden" name="producto" value="<?php echo $mostrar_productos[$i]['producto']; ?>"><?php echo $mostrar_productos[$i]['producto']; ?></td>
+							<td class="listaProd"><input type="hidden" name="descripcion" value="<?php echo $mostrar_productos[$i]['descripcion']; ?>"><?php echo $mostrar_productos[$i]['descripcion']; ?></td>
+							<td class="listaProd"><input type="hidden" name="precio" value="<?php echo $mostrar_productos[$i]['precio']; ?>"><?php echo $mostrar_productos[$i]['precio']; ?>$</td>
+							<td><button type="submit" class="submitUnidad1">Add to<br>🛒</button></td>
 						</tr>
 					</form>
 				<?php } ?>
