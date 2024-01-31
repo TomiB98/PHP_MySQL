@@ -38,23 +38,37 @@
 				<?php
 				for ($i = 0; $i < count($mostrar_productos); $i++) {
 				?>
-					<form action="componentes/introducir_compra.php" method="post">
+					<form action="" method="POST">
 						<tr>
 							<td class="listaProd"><input type="hidden" name="codigo" value="<?php echo $mostrar_productos[$i]['codigo']; ?>"><?php echo $mostrar_productos[$i]['codigo']; ?></td>
 							<td class="listaProd"><input type="hidden" name="producto" value="<?php echo $mostrar_productos[$i]['producto']; ?>"><?php echo $mostrar_productos[$i]['producto']; ?></td>
 							<td class="listaProd"><input type="hidden" name="descripcion" value="<?php echo $mostrar_productos[$i]['descripcion']; ?>"><?php echo $mostrar_productos[$i]['descripcion']; ?></td>
 							<td class="listaProd"><input type="hidden" name="precio" value="<?php echo $mostrar_productos[$i]['precio']; ?>"><?php echo $mostrar_productos[$i]['precio']; ?>$</td>
-							<td><button type="submit" class="submitUnidad1">Add to<br>🛒</button></td>
+							<td class="btnsProd">
+								<button type="submit" class="submitUnidad1">Add to<br>🛒</button>
+								<button type="submit" class="submitUnidad1">Modify<br>⚙️</button>
+							</td>
 						</tr>
 					</form>
 				<?php } ?>
 
 			</table>
 
-			<h2>Compras</h2>
-			
+			<h2>Nuevo Producto</h2>
+
+			<form class="newProd" action="" method="POST">
+				<input name="prod" type="text" placeholder="Nombre">
+				<textarea name="desc" id="" cols="0" rows="5" placeholder="Descripcion del producto"></textarea>
+				<input name="pre" type="number" placeholder="Precio">
+				<div class="submitComentario">
+					<button type="submit" class="submitUnidad1">Cargar<br>📥</button>
+				</div>
+			</form>
+
 		</section>
 		<aside>
+
+			<h2>Carrito</h2>
 
 		</aside>
 		<footer>

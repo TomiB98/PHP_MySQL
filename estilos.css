@@ -337,6 +337,16 @@ h5 {
   text-align: center;
 }
 
+.btnsProd {
+  display: flex;
+  flex-direction: column;
+}
+
+.newProd {
+  display: flex;
+  flex-direction: column;
+}
+
 /* pantalla maximo 980px */
 @media screen and (max-width:980px) {
   .container {
