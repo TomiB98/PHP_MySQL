@@ -345,6 +345,8 @@ h5 {
 .newProd {
   display: flex;
   flex-direction: column;
+  margin: auto;
+  width: 50%;
 }
 
 /* pantalla maximo 980px */

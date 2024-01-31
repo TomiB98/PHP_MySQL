@@ -56,14 +56,20 @@
 
 			<h2>Nuevo Producto</h2>
 
-			<form class="newProd" action="" method="POST">
-				<input name="prod" type="text" placeholder="Nombre">
-				<textarea name="desc" id="" cols="0" rows="5" placeholder="Descripcion del producto"></textarea>
-				<input name="pre" type="number" placeholder="Precio">
+			<form class="newProd" action="componentes/insertar_productos.php" method="POST">
+				<input name="prod" type="text" placeholder="Nombre" required maxlength="30">
+				<textarea name="desc" id="" cols="0" rows="5" placeholder="Descripcion del producto" required maxlength="255"></textarea>
+				<input name="pre" type="number" step="0.01" placeholder="Precio" pattern="^\d{1,8}(\.\d{1,2})?$">
 				<div class="submitComentario">
 					<button type="submit" class="submitUnidad1">Cargar<br>📥</button>
 				</div>
 			</form>
+
+			<?php
+			if(isset($_GET['carga_correcta'])) {
+				echo "<h4>Producto cargado correctamente!</h4>";
+			}
+			?>
 
 		</section>
 		<aside>
