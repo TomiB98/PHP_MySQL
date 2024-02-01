@@ -29,6 +29,7 @@
 
 			<table>
 				<tr>
+					<th></th>
 					<th class="listaProdTitle">Codigo</th>
 					<th class="listaProdTitle">Nombre</th>
 					<th class="listaProdTitle">Descripción</th>
@@ -40,14 +41,15 @@
 				?>
 					<form action="" method="POST">
 						<tr>
+							<td class="btnsProd">
+								<button type="submit" class="submitUnidad1">Delete<br>🗑️</button>
+								<a href="componentes/modificar_producto.php?codigo=<?php echo $mostrar_productos[$i]['codigo']; ?>" class="submitUnidad1">Modify<br>⚙️</a>
+							</td>
 							<td class="listaProd"><input type="hidden" name="codigo" value="<?php echo $mostrar_productos[$i]['codigo']; ?>"><?php echo $mostrar_productos[$i]['codigo']; ?></td>
 							<td class="listaProd"><input type="hidden" name="producto" value="<?php echo $mostrar_productos[$i]['producto']; ?>"><?php echo $mostrar_productos[$i]['producto']; ?></td>
 							<td class="listaProd"><input type="hidden" name="descripcion" value="<?php echo $mostrar_productos[$i]['descripcion']; ?>"><?php echo $mostrar_productos[$i]['descripcion']; ?></td>
 							<td class="listaProd"><input type="hidden" name="precio" value="<?php echo $mostrar_productos[$i]['precio']; ?>"><?php echo $mostrar_productos[$i]['precio']; ?>$</td>
-							<td class="btnsProd">
-								<button type="submit" class="submitUnidad1">Add to<br>🛒</button>
-								<button type="submit" class="submitUnidad1">Modify<br>⚙️</button>
-							</td>
+							<td><button type="submit" class="submitUnidad1">Add to<br>🛒</button></td>
 						</tr>
 					</form>
 				<?php } ?>
@@ -57,16 +59,16 @@
 			<h2>Nuevo Producto</h2>
 
 			<form class="newProd" action="componentes/insertar_productos.php" method="POST">
-				<input name="prod" type="text" placeholder="Nombre" required maxlength="30">
-				<textarea name="desc" id="" cols="0" rows="5" placeholder="Descripcion del producto" required maxlength="255"></textarea>
-				<input name="pre" type="number" step="0.01" placeholder="Precio" pattern="^\d{1,8}(\.\d{1,2})?$">
+				<input class="inputNewProd" name="prod" type="text" placeholder="Nombre" required maxlength="30">
+				<textarea class="inputNewProd" name="desc" id="" cols="0" rows="5" placeholder="Descripcion del producto" required maxlength="255"></textarea>
+				<input class="inputNewProd" name="pre" type="number" step="0.01" placeholder="Precio" pattern="^\d{1,8}(\.\d{1,2})?$">
 				<div class="submitComentario">
 					<button type="submit" class="submitUnidad1">Cargar<br>📥</button>
 				</div>
 			</form>
 
 			<?php
-			if(isset($_GET['carga_correcta'])) {
+			if (isset($_GET['carga_correcta'])) {
 				echo "<h4>Producto cargado correctamente!</h4>";
 			}
 			?>

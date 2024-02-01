@@ -340,6 +340,9 @@ h5 {
 .btnsProd {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .newProd {
@@ -347,6 +350,13 @@ h5 {
   flex-direction: column;
   margin: auto;
   width: 50%;
+}
+
+.inputNewProd {
+  margin-bottom: 3px;
+  border-radius: 3px;
+  outline: 0;
+  border: 1px solid #bebdbd;
 }
 
 /* pantalla maximo 980px */
