@@ -42,7 +42,7 @@
 					<form action="" method="POST">
 						<tr>
 							<td class="btnsProd">
-								<button type="submit" class="submitUnidad1">Delete<br>🗑️</button>
+								<a href="componentes/eliminar_producto.php?codigo=<?php echo $mostrar_productos[$i]['codigo']; ?>" class="submitUnidad1">Delete<br>🗑️</a>
 								<a href="componentes/modificar_producto.php?codigo=<?php echo $mostrar_productos[$i]['codigo']; ?>" class="submitUnidad1">Modify<br>⚙️</a>
 							</td>
 							<td class="listaProd"><input type="hidden" name="codigo" value="<?php echo $mostrar_productos[$i]['codigo']; ?>"><?php echo $mostrar_productos[$i]['codigo']; ?></td>
