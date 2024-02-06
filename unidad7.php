@@ -39,7 +39,7 @@
 				<?php
 				for ($i = 0; $i < count($mostrar_productos); $i++) {
 				?>
-					<form action="" method="POST">
+					<form action="componentes/introducir_compra.php" method="POST">
 						<tr>
 							<td class="btnsProd">
 								<a href="componentes/eliminar_producto.php?codigo=<?php echo $mostrar_productos[$i]['codigo']; ?>" class="submitUnidad1">Delete<br>🗑️</a>
@@ -77,6 +77,29 @@
 		<aside>
 
 			<h2>Carrito</h2>
+
+			<?php
+			include('componentes/mostrar_compras.php');
+			$mostrar_compras
+			?>
+
+			<table>
+				<?php
+				if ($mostrar_compras !== null) {
+					for ($i = 0; $i < count($mostrar_compras); $i++) {
+				?>
+						<tr class="listaComp">
+							<td class="item"><strong>Item</strong></td>
+							<td class="closeComp"><a href="componentes/eliminar_compra.php?id=<?php echo $mostrar_compras[$i]['id_compra']; ?>">✖</a></td>
+							<td>• Nombre: <?php echo $mostrar_compras[$i]['producto']; ?></td>
+							<td>• Precio: <?php echo $mostrar_compras[$i]['precio']; ?>$</td>
+							<td>• Codigo: <?php echo $mostrar_compras[$i]['codigo']; ?></td>
+						</tr>
+				<?php
+					}
+				}
+				?>
+			</table>
 
 		</aside>
 		<footer>
