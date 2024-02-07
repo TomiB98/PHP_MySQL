@@ -359,6 +359,36 @@ h5 {
   border: 1px solid #bebdbd;
 }
 
+.listaComp {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #f06056d8;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fafafa;
+  margin-bottom: 5px;
+}
+
+.closeComp {
+  position: absolute;
+  top: 4px; 
+  right: 6px;
+  align-items: flex-end;
+  margin-top: -5px;
+}
+
+.item {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3px;
+  font-size: medium;
+  background-color: #f06056d8;
+  width: 35%;
+  border-radius: 10px;
+}
+
 /* pantalla maximo 980px */
 @media screen and (max-width:980px) {
   .container {
