@@ -389,6 +389,14 @@ h5 {
   border-radius: 10px;
 }
 
+.toSignUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  color: blue;
+}
+
 /* pantalla maximo 980px */
 @media screen and (max-width:980px) {
   .container {
