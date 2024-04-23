@@ -7,8 +7,6 @@ $year = $_POST['year'];
 $fechaTurno = date("Y-m-d", mktime(0, 0, 0, $month, $day, $year));
 $fechaActual = date('Y-m-d');
 
-$fechaTurno = date("Y-m-d", mktime(0, 0, 0, $month, $day, $year));
-$fechaActual = date('Y-m-d');
 
 if($fechaTurno<$fechaActual){
     header("Location: ../unidad2.php?vencido");
