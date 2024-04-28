@@ -1,18 +1,15 @@
 <?php
-date_default_timezone_set('America/Argentina/Buenos_Aires');
-$day = $_POST['day'];
-$month = $_POST['month'];
-$year = $_POST['year'];
+$password = password_hash($_POST['password'], PASSWORD_DEFAULT, array('const'=>4));
+$email = $_POST['email'];
 
-$fechaTurno = date("Y-m-d", mktime(0, 0, 0, $month, $day, $year));
-$fechaActual = date('Y-m-d');
+include('../clases/base_datos.php');
+include('../clases/users.php');
+include('conexion_clases.php');
 
+$base = new Basedatos(SERVIDOR, USUARIO, PASS, BASE);
+$user = new Users($base);
 
-if($fechaTurno<$fechaActual){
-    header("Location: ../unidad2.php?vencido");
-} else {
-    $calcular = strtotime($fechaTurno) - strtotime($fechaActual);
-    $dias = intval($calcular/86400);
-    header("Location: ../unidad2.php?dias=$dias");
-}
+$user->sign_Up($email, $password);
+
+header("Location: ../unidad8.php?usuario_creado")
 ?>
